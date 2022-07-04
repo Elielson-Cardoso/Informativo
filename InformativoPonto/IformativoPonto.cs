@@ -1,4 +1,5 @@
-﻿using MetroFramework;
+﻿using Firebase.Database;
+using MetroFramework;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,6 +26,15 @@ namespace InformativoPonto
         public IformativoPonto()
         {
             InitializeComponent();
+
+            //var auth = "ABCDE"; // your app secret
+            //var firebaseClient = new FirebaseClient(
+            //  "https://informativo-9fc24-default-rtdb.firebaseio.com/",
+            //  new FirebaseOptions
+            //  {
+            //      AuthTokenAsyncFactory = () => Task.FromResult(auth)
+            //  });
+
             mtxtDataAtual.Text = DateTime.Today.ToShortDateString();
         }
 
